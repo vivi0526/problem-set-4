@@ -1,0 +1,26 @@
+# Overview
+
+For this problem set you will need to analyze some ChIP-seq data to
+identify a mystery factor X.
+
+## Goals
+
+1. Learn to align FASTQ reads to a genome (create a BAM file)
+
+1. Convert BAM alignments into bedGraph format
+
+1. Convert bedGraph to bigWig (for UCSC track display)
+
+## Workflow
+
+1. Align FASTQ data to the human genome with bowtie2
+
+1. Create a bedGraph file of signal.
+
+1. Call peaks from the bedGraph data using MACS2
+
+1. Generate FASTA format from the peaks and identify motifs
+
+1. Compare peaks to ENCODE peak calls using `bedtools jaccard`
+
+1. Create a track in the UCSC Browser containing your peak data
